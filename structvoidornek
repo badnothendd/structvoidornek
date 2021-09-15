@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct ogrenci {
+	int no;
+	char ad[30];
+	char soyad[30];
+};
+
+  void ogrencibilgisiyazdir(struct ogrenci ogr) {
+  	printf("no: %d\n ad: %s\n soyad: %s\n",
+  	ogr.no, ogr.ad, ogr.soyad
+  	);
+  }
+  int main() {
+  	struct ogrenci ogrtest;
+  	ogrtest.no=686;
+  	strcpy(ogrtest.ad, "tugba");
+  	strcpy(ogrtest.soyad, "yildiz");
+  	ogrencibilgisiyazdir(ogrtest);
+  	return 0;
+  }
